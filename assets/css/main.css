@@ -2070,7 +2070,7 @@
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				background: rgba(212, 212, 255, 0.035);
+				background: rgba(255, 212, 212, 0.04);
 				content: '';
 				display: inline-block;
 				height: 1.65em;
@@ -2186,10 +2186,11 @@
 
 	a.icon.alt:hover:before {
 		background-color: #FA0505;
+		color:#ffffff
 	}
 
 	a.icon.alt:active:before {
-		background-color: #F61F1F;
+		background-color: #720303;
 	}
 
 /* Image */

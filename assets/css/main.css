@@ -2712,6 +2712,7 @@
 			.button.special:active {
 				background-color: #B10707;
 				color: white;
+				color:white;
 				/*color: #363944 !important;*/
 			}
 
@@ -3293,8 +3294,11 @@
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: #47454E;
 			}
+			#header.alt.style2  .logo:hover strong {
+				background-color: #FA0404;
+				color: white;}
 
 			#header.alt.style3 .logo strong {
 				color: #ec8d81;

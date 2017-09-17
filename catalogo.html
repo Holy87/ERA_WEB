@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="styles/nivo-slider.css" type="text/css" media="screen" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
@@ -62,29 +63,20 @@
 					</section>
 
 
-					<!-- Slideshow --> 
-					<img src="images/pic002.jpg" alt="" />
+					
 					
 
 
 				<!-- Main -->
 					<div id="main">
 
-						
-
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Affidabilità e Sicurezza</h2>
-									</header>
-									<p>Venite subito a conoscere le innumerevoli soluzioni pensate per i nostri clienti con contratti manutenzione personalizzati e finanziamenti su misura.</p>
-									<ul class="actions">
-										<li><a href="contatti.html" class="button ">Contatti</a></li>
-										<li><a href="catalogo.html" class="button special icon fa-book">Sfoglia Catalogo</a></li>
-									</ul>
-								</div>
-							</section>
+						<!-- Slideshow --> 
+					<div id="slider" class="nivoSlider">
+							<img src="images/slider/slider-1.jpg" alt="" />
+							<img src="images/slider/slider-2.jpg" alt="" />
+							<img src="images/slider/slider-3.jpg" alt="" />
+							<img src="images/slider/slider-4.jpg" alt="" />
+						</div>
 
 					</div>
 
@@ -114,6 +106,11 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script type="text/javascript" src="assets/js/jquery.nivo.slider.js"></script>
+			<script type="text/javascript">
+				$(window).load(function() {
+					$('#slider').nivoSlider();
+				});
+			</script>
 	</body>
 </html>

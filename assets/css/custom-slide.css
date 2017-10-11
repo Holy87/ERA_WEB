@@ -26,3 +26,8 @@ html, body {
     -webkit-align-items: center;
     align-items: center;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}

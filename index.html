@@ -22,7 +22,8 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"> <img src='images/mini_logo.png' width="10%" > <strong>ERA</strong> <span>Ascensori</span></a>
+
+						<a href="index.html" class="logo"><strong>ERA</strong> <span>Ascensori</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -153,7 +154,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form id="messageForm">
 									<div class="field half first">
 										<label for="name">Nome</label>
 										<input type="text" name="name" id="name" />
@@ -167,7 +168,7 @@
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Invia il messagio" class="special" /></li>
+										<li><input type="submit" id="submitter" value="Invia il messagio" class="special" /></li>
 										<li><input type="reset" value="Cancella" /></li>
 									</ul>
 								</form>
@@ -229,6 +230,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script src="assets/js/mail.js"></script>
 
 	</body>
 </html>

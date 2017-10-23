@@ -4001,3 +4001,7 @@
 		font-weight: bold;
 		font-style: normal;
 		}
+
+		.img-logo {
+			vertical-align: baseline;
+		}

@@ -1,4 +1,12 @@
-
+@font-face. {
+	font-family: 'Adon Black';
+	src: url('Adon Black.ttf') format('truetype');;
+	src: url('Adon Black.eot?#iefix') format('embedded-opentype'),
+	url('Adon Black.woff') format('woff'),
+	url('Adon Black.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
 
 
 

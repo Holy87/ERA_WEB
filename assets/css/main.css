@@ -2212,16 +2212,17 @@ header.major > :first-child {
     margin-bottom: 0;
     width: calc(100% + 0.5em);
 }
-
+/*
 header.major > :first-child:after {
     content: '';
-    background-color: #ffffff;
     display: block;
     height: 2px;
+    background-color: #ffffff;
     margin: 0.325em 0 0.5em 0;
     width: 100%;
-}
 
+}
+*/
 header.major > p {
     font-size: 0.7em;
     font-weight: 600;

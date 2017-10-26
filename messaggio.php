@@ -12,7 +12,6 @@ $headers .= "Content-type:text/html;charset=UTF-8 \r\n";
 $headers .= "From: ".$name." <sito@eraascensori.it> \r\n";
 $headers .= "Reply-To: ".$name." <".$from."> \r\n";
 
-
 if(mail($to,$subj_text,$message,$headers)) {
     echo json_encode(['ok' => true]);
 } else {

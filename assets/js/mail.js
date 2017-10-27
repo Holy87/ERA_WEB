@@ -4,8 +4,9 @@ function send_message(e) {
    //button.html('<i class="fa fa-circle-o-notch fa-spin fa-fw"></i> Invio in corso...');
     $.ajax({
         type: 'post',
-        url: 'messaggio.php',
-        dataType: 'json',
+        url: 'http://www.francescobosso.altervista.org/era/messaggio.php',
+        dataType: 'jsonp',
+        jsonpCallback: 'result',
         data: $("#messageForm").serialize(),
         success: function (response) {
             if (response.ok)

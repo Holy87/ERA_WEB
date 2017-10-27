@@ -13,7 +13,8 @@ $headers .= "From: ".$name." <sito@eraascensori.it> \r\n";
 $headers .= "Reply-To: ".$name." <".$from."> \r\n";
 
 if(mail($to,$subj_text,$message,$headers)) {
-    echo json_encode(['ok' => true]);
+    $outp = json_encode(['ok' => true]);
 } else {
-    echo json_encode(['ok' => false]);
+    $outp = json_encode(['ok' => false]);
 }
+echo "result($outp)";

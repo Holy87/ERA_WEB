@@ -2,61 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>http://www.eraascensori.it/</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/24su24.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/auto.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/catalogo.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/contatti.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/gl1.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/montascale.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/panoramici.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/sicurezza.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>http://www.eraascensori.it/storia.html</loc>
-      <lastmod>2017-10-27</lastmod>
+      <lastmod>2020-09-20</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>http://www.eraascensori.it/ascensori-batteria.html</loc>
+      <lastmod>2020-09-20</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>

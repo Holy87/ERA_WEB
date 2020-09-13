@@ -3235,6 +3235,10 @@ button:disabled,
     width: 60%;
 }
 
+.tiles article.full {
+    width: 100%;
+}
+
 .tiles article:nth-child(6n - 5):before {
     background-color: #e7b788;
 }
@@ -3257,6 +3261,10 @@ button:disabled,
 
 .tiles article:nth-child(6n):before {
     background-color: #ec8d81;
+}
+
+.tiles article:nth-child(7):before {
+    background-color: #224c22ba;
 }
 
 @media screen and (max-width: 1280px) {

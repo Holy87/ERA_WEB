@@ -49,4 +49,4 @@ if(mail($to,$subj_text,$body,$headers)) {
 } else {
     $outp = json_encode(['ok' => false]);
 }
-echo "result($outp)";
+echo $outp;

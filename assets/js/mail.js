@@ -1,23 +1,23 @@
 function send_message(e) {
+    e.preventDefault();
     let button = $("#submitter");
     button.prop('disabled', "diabled");
-    button.html('Invio in corso...');
+    button.val('Invio in corso...');
+    console.log('prova...');
     $.ajax({
         type: 'post',
         url: 'messaggio.php',
-        dataType: 'json',
         data: $("#messageForm").serialize(),
-        success: function (response) {
+        success: function (raw_response) {
+            let response = JSON.parse(raw_response);
             if (response.ok)
                 alert("Messaggio inviato correttamente");
             else
                 alert("C'è stato un errore nell'invio del messaggio. Per favore, riprova");
-            //button.html('Invia il messaggio');
             button.removeAttr('disabled');
-            button.html("Invia di nuovo");
+            button.val("Invia di nuovo");
         }
     });
-    e.preventDefault();
 }
 
 $(document).ready(function() {
@@ -25,7 +25,7 @@ $(document).ready(function() {
         send_message(e);
     });
 
-    var mailbox = $('.generate-mail');
+    let mailbox = $('.generate-mail');
     mailbox.click(function (evt) {
         if (mailbox.attr('href') !== '#') return;
         evt.preventDefault();
@@ -34,12 +34,8 @@ $(document).ready(function() {
             type: 'get',
             url: 'show_mail.php',
             success: function(resp) {
-                if (resp.ok) {
-                    mailbox.html(resp.body);
-                    mailbox.attr('href', 'mailto:'+resp.body);
-                } else {
-                    mailbox.html('Errore. Per favore, usa il modulo di contatto');
-                }
+                mailbox.html(resp);
+                mailbox.attr('href', 'mailto:'+resp);
             }
         })
     });

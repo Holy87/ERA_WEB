@@ -3,12 +3,27 @@ header('Access-Control-Allow-Origin: http://www.eraascensori.it');
 header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
 header('Access-Control-Max-Age: 1000');
 header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
-$to = "info@eraascensori.it";
+
 $from = $_POST["email"];
 $name = $_POST["name"];
 $phone = $_POST["phone"];
 $message = $_POST["message"];
-$subj_text = 'Hai un nuovo messaggio da un visitatore';
+$subject = $_POST["subject"];
+
+switch ($subject) {
+    case "AST":
+        $to = "assistenza@eraascensori.it";
+        $subj_text = "Richiesta di assistenza";
+        break;
+    case "COM":
+        $to = "commerciale@eraascensori.it";
+        $subj_text = "Richiesta di contatto commerciale";
+        break;
+    default:
+        $to = "info@eraascensori.it";
+        $subj_text = ($subject == "INF" ? "Richiesta di informazioni" : "Hai un messaggio da un visitatore");
+        break;
+}
 
 $recaps = "Recapiti:\nEmail: <a href=\"".$from."\">".$from."</a>";
 if (isset($phone)) {

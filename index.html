@@ -196,15 +196,26 @@
                     <form id="messageForm">
                         <div class="field half first">
                             <label for="name">Nome</label>
-                            <input type="text" name="name" id="name" />
+                            <input type="text" name="name" id="name"  required />
                         </div>
                         <div class="field half">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" />
+                            <input type="text" name="email" id="email" required />
                         </div>
                         <div class="field half first">
                             <label for="phone">Telefono</label>
                             <input type="tel" name="phone" id="phone" required />
+                        </div>
+                        <div class="field half">
+                            <label for="subject">Argomento</label>
+                                <div class="select-wrapper">
+                                    <select name="subject" id="subject">
+                                        <option value="INF" selected>Informazioni generali</option>
+                                        <option value="AST">Assistenza tecnica</option>
+                                        <option value="COM">Assistenza commerciale</option>
+                                        <option value="OTH">Altro</option>
+                                    </select>
+                                </div>
                         </div>
                         <div class="field">
                             <textarea name="message" id="message" rows="6"
@@ -222,7 +233,7 @@
                             <span class="icon alt fa-envelope"></span>
                             <h3>Email</h3>
 
-                            <a href="mailto:info@eraascensori.it">INFO@ERAASCENSORI.IT</a>
+                            <a href="#" class="generate-mail">Clicca per mostrare</a>
                         </div>
                     </section>
                     <section>

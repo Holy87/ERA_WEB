@@ -2023,6 +2023,10 @@ body, input, select, textarea {
     line-height: 1.65;
 }
 
+select option {
+    color: #2a2f4a;
+}
+
 @media screen and (max-width: 1680px) {
 
     body, input, select, textarea {

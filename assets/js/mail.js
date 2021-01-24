@@ -23,6 +23,25 @@ function send_message(e) {
 $(document).ready(function() {
     $('#messageForm').submit(function (e) {
         send_message(e);
-    })
+    });
+
+    var mailbox = $('.generate-mail');
+    mailbox.click(function (evt) {
+        if (mailbox.attr('href') !== '#') return;
+        evt.preventDefault();
+        mailbox.html('Un attimo...');
+        $.ajax({
+            type: 'get',
+            url: 'show_mail.php',
+            success: function(resp) {
+                if (resp.ok) {
+                    mailbox.html(resp.body);
+                    mailbox.attr('href', 'mailto:'+resp.body);
+                } else {
+                    mailbox.html('Errore. Per favore, usa il modulo di contatto');
+                }
+            }
+        })
+    });
 
 });

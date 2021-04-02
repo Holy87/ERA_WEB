@@ -30,14 +30,17 @@ $(document).ready(function() {
         if (mailbox.attr('href') !== '#') return;
         evt.preventDefault();
         mailbox.html('Un attimo...');
-        $.ajax({
-            type: 'get',
-            url: 'show_mail.php',
-            success: function(resp) {
-                mailbox.html(resp);
-                mailbox.attr('href', 'mailto:'+resp);
-            }
-        })
+        let resp = atob("aW5mb0BlcmFhc2NlbnNvcmkuaXQ=");
+        mailbox.html(resp);
+        mailbox.attr('href', 'mailto:'+resp);
+        // $.ajax({
+        //     type: 'get',
+        //     url: 'show_mail.php',
+        //     success: function(resp) {
+        //         mailbox.html(resp);
+        //         mailbox.attr('href', 'mailto:'+resp);
+        //     }
+        // })
     });
 
 });

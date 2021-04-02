@@ -4394,3 +4394,8 @@ body.is-menu-visible #menu .inner {
     font-weight: bold;
     font-style: normal;
 }
+
+span.green-number {
+    color: lightgreen;
+    font-weight: bold;
+}
